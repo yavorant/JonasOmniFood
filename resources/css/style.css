@@ -6,6 +6,7 @@ font-family: 'Lato', sans-serif; */
     padding: 0;
     /* the content box will shrink to absorb that extra width. This typically makes it much easier to size elements. */
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 html {
@@ -16,4 +17,10 @@ html {
     font-size: 20px;
     /* The browser emphasizes legibility over rendering speed and geometric precision. This enables kerning and optional ligatures. */
     text-rendering: optimizeLegibility; 
+}
+
+.row {
+    max-width: 1140px;
+    /* the same as margin: 0 auto 0 auto // centre all  */
+    margin: 0 auto; 
 }
