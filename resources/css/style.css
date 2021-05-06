@@ -2,5 +2,18 @@
 font-family: 'Lato', sans-serif; */
 
 * {
-    background-color: cadetblue;
+    margin: 0;
+    padding: 0;
+    /* the content box will shrink to absorb that extra width. This typically makes it much easier to size elements. */
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    /* The browser emphasizes legibility over rendering speed and geometric precision. This enables kerning and optional ligatures. */
+    text-rendering: optimizeLegibility; 
 }
