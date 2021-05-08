@@ -6,14 +6,13 @@ font-family: 'Lato', sans-serif; */
     padding: 0;
     /* the content box will shrink to absorb that extra width. This typically makes it much easier to size elements. */
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 html {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
     font-size: 20px;
     /* The browser emphasizes legibility over rendering speed and geometric precision. This enables kerning and optional ligatures. */
     text-rendering: optimizeLegibility; 
@@ -41,6 +40,8 @@ header {
 }
 
 h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
     color: #fff;
     font-size: 240%;
     font-weight: 300;
@@ -48,3 +49,40 @@ h1 {
     letter-spacing: 1px;
     word-spacing: 4px;
 }
+
+
+
+.btn-full {
+    background-color: #e67e22;
+    /*from flatuicolors.com */
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost {
+    color: #e67e22;    
+}
+
+/* :link & :visited means they have the same style after have been visited */
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid #e67e22;  
+    transition: background-color 0.2s, border 0.2s, color 0.2s;  
+}
+
+.btn:hover,
+.btn:active {
+    /*from https://www.0to255.com/e67e22 we take a bit darkwr tone */
+    background-color: #cf6d17;
+    border: 1px solid #cf6d17; 
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
+}    
+    
