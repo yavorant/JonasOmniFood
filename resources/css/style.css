@@ -1,5 +1,14 @@
-/* google font linked 'Lato'
-font-family: 'Lato', sans-serif; */
+/* google font 'Lato':
+    font-family: 'Lato', sans-serif; 
+color from flatuicolors.com:
+    #e67e22
+from 0to255.com we take a bit darker tone: 
+    #cf6d17    
+*/
+
+/*--------------------------------------------------------------------*/
+/* BASIC SETUP */
+/*--------------------------------------------------------------------*/
 
 * {
     margin: 0;
@@ -18,26 +27,11 @@ html {
     text-rendering: optimizeLegibility; 
 }
 
-.row {
-    max-width: 1140px;
-    /* the same as margin: 0 auto 0 auto // centre all  */
-    margin: 0 auto; 
-}
+/*--------------------------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*--------------------------------------------------------------------*/
 
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
-    background-size: cover;
-    background-position: center; 
-    height: 100vh;
-}
+/* ----- HEADINGS ----- */
 
 h1 {
     margin-top: 0;
@@ -50,7 +44,13 @@ h1 {
     word-spacing: 4px;
 }
 
+.row {
+    max-width: 1140px;
+    /* the same as margin: 0 auto 0 auto // centre all  */
+    margin: 0 auto; 
+}
 
+/* ----- BUTTONS ----- */
 
 .btn-full {
     background-color: #e67e22;
@@ -76,7 +76,6 @@ h1 {
 
 .btn:hover,
 .btn:active {
-    /*from https://www.0to255.com/e67e22 we take a bit darkwr tone */
     background-color: #cf6d17;
     border: 1px solid #cf6d17; 
 }
@@ -86,3 +85,22 @@ h1 {
     color: #fff;
 }    
     
+
+/*--------------------------------------------------------------------*/
+/* HEADER */
+/*--------------------------------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
