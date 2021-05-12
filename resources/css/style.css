@@ -54,6 +54,15 @@ h2 {
     margin-bottom: 30px;
 }
 
+h2:after {
+    display: block;    
+    background-color: #e67e22;
+    height: 2px; 
+    width: 100px;
+    margin: 30px auto 0;
+    content: "";
+}
+
 .row {
     max-width: 1140px;
     /* the same as margin: 0 auto 0 auto // centre all  */
