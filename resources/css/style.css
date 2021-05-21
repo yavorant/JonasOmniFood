@@ -187,6 +187,8 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
     background-position: center; 
+    /* background-image on the same fixed place while scroling: */
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -344,4 +346,44 @@ header {
 
 .city-feature {
     margin-bottom: 5px;
+}
+
+/*--------------------------------------------------------------------*/
+/* TESTIMONIALS */
+/*--------------------------------------------------------------------*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+blockquote {
+    padding: 2%;
+    line-height: 145%;
+    font-style: italic;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote::before {
+    position: absolute;
+    content: "\201D";
+    font-size: 400%;
+    top: -5px;
+    left: -5px;
+} 
+
+cite {
+    display: block;
+    font-size: 90%;
+    margin-top: 25px;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
 }
