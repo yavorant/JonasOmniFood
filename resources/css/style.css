@@ -25,6 +25,7 @@ html {
     font-size: 20px;
     /* The browser emphasizes legibility over rendering speed and geometric precision. This enables kerning and optional ligatures. */
     text-rendering: optimizeLegibility; 
+    overflow-x: hidden;
 }
 
 /* clear the float in the .meals-showcase: */
