@@ -478,3 +478,90 @@ input[type="checkbox"] {
 *:focus {
     outline: none;
 }
+
+/*--------------------------------------------------------------------*/
+/* FOOTER */
+/*--------------------------------------------------------------------*/
+
+footer {
+    background-color: #333; 
+    font-size: 80%;
+    padding: 40px;
+
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.social-links li {
+    margin-right: 30px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+footer li a:link,
+footer li a:visited {
+    color: #888; 
+    text-decoration: none;
+    border: 0;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a {
+    font-size: 200%;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+    transition: color 0.2s;
+}
+
+/* Facebook */
+.social-links li:nth-child(1) a:hover,
+.social-links li:nth-child(1) a:active {
+    color: #1877f2;
+}
+
+/* Twitter */
+.social-links li:nth-child(2) a:hover,
+.social-links li:nth-child(2) a:active {
+    color: #1da1f2;
+}
+
+/* Instagram */
+.social-links li:nth-child(3) a:hover,
+.social-links li:nth-child(3) a:active {
+    color: #c32aa3;
+}
+
+/* WhatsApp */
+.social-links li:nth-child(4) a:hover,
+.social-links li:nth-child(4) a:active {
+    color: #25d366;
+}
+
+footer p {
+    text-align: center;
+    color: #888; 
+    margin-top: 20px;
+}
