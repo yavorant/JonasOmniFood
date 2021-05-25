@@ -611,3 +611,16 @@ footer p {
     color: #888; 
     margin-top: 20px;
 }
+
+/*--------------------------------------------------------------------*/
+/* ANIMATIONS */
+/*--------------------------------------------------------------------*/
+
+.js--waypoint-1 {
+    opacity: 0;
+}
+
+/* when 2 clases should work together */
+.js--waypoint-1.animated {
+    opacity: 1;
+}

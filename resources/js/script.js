@@ -63,3 +63,11 @@ $('a[href*="#"]')
     }
   }
 });
+
+    /* Animations scrolling */
+
+var waypoints = $('.js--waypoint-1').waypoint(function(direction) {
+    $('.js--waypoint-1').addClass('animated fadeIn'); 
+  }, {
+    offset: '50%'
+  })
