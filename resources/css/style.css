@@ -624,3 +624,7 @@ footer p {
 .js--waypoint-1.animated {
     opacity: 1;
 }
+
+:root {
+    --animate-duration: 2s;
+  }
