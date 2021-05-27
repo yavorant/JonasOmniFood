@@ -72,21 +72,27 @@ $('.js--waypoint-1').waypoint(function(direction) {
     offset: '50%'
   })
 
-  $('.js--waypoint-2').waypoint(function(direction) {
+$('.js--waypoint-2').waypoint(function(direction) {
     $('.js--waypoint-2').addClass('animated bounceInOut'); 
   }, {
     offset: '50%'
   })
 
-  $('.js--waypoint-3').waypoint(function(direction) {
+$('.js--waypoint-3').waypoint(function(direction) {
     $('.js--waypoint-3').addClass('animated fadeIn'); 
   }, {
     offset: '50%'
   })
 
-  $('.js--waypoint-4').waypoint(function(direction) {
+$('.js--waypoint-4').waypoint(function(direction) {
     $('.js--waypoint-4').addClass('animated bounceOut'); 
   }, {
     offset: '50%'
   })
 
+/* Mobile nav */  
+$('.js--nav-icon').click(function() {
+  var nav = $('.js--main-nav');
+
+  nav.slideToggle(200);
+});

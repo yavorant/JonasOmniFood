@@ -252,6 +252,20 @@ nav {
     transition: border-bottom 0.2s;
 }
 
+/* Mobile navigation */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.menu-outline {
+    font-size: 300%;
+    color: #fff;
+    display: none;
+}
+
 /* Sticky navigation */
 
 .sticky {
@@ -283,6 +297,10 @@ nav {
     margin-top: 20px;
 }
 
+.sticky .mobile-nav-icon {
+    margin-top: 12px;
+    font-size: 80%;
+}
 
 /*--------------------------------------------------------------------*/
 /* FEATURES */
@@ -625,7 +643,7 @@ footer p {
 
 .js--waypoint-4 {
     animation-duration: 5s;
-}
+ }
 
 /* when 2 clases should work together */
 .js--waypoint-1.animated,
