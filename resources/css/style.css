@@ -616,15 +616,21 @@ footer p {
 /* ANIMATIONS */
 /*--------------------------------------------------------------------*/
 
-.js--waypoint-1 {
+.js--waypoint-1,
+.js--waypoint-2,
+.js--waypoint-3 {
     opacity: 0;
+    animation-duration: 2s;
+}
+
+.js--waypoint-4 {
+    animation-duration: 5s;
 }
 
 /* when 2 clases should work together */
-.js--waypoint-1.animated {
+.js--waypoint-1.animated,
+.js--waypoint-2.animated,
+.js--waypoint-3.animated {
     opacity: 1;
 }
 
-:root {
-    --animate-duration: 2s;
-  }
